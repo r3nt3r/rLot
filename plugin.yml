@@ -1,0 +1,9 @@
+name: Test
+main: test.test
+description: First bukkit plugin
+version: 0.1
+author: r3nt3r
+
+commands:
+  hello:
+   description: This will say hello!
