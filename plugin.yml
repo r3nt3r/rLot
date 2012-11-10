@@ -1,9 +1,16 @@
-name: Test
-main: test.test
-description: First bukkit plugin
-version: 0.1
+name: rLot
+main: com.r3nt3r.lo.Main
+description: rLottery
+version: 0.4
 author: r3nt3r
-
+softdepend: [Vault]
 commands:
-  hello:
-   description: This will say hello!
+  rlot:
+    description: 'Run a lottery.'
+    usage: /rlot
+    permission: rlot.use
+    permission-message: 'You don''t have <permission>'
+permissions:
+  rlot.use:
+    description: 'Gives access to rlot'
+    default: true
